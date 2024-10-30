@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "excelkits-blocks/calculator",
+	"version": "1.0.0",
+	"title": "Calculator",
+	"category": "widgets",
+	"icon": "calculator",
+	"description": "Add an Excelkits calculator that's customizable with a spreadsheet.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "excelkits-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"keywords": [
+		"excel",
+		"calc",
+		"table",
+		"chart",
+		"graph",
+		"widget",
+		"spreadsheet"
+	],
+
+	"example": {
+		"attributes": {
+			"isBlockInsertPreview": true
+		}
+	}
+}

@@ -1,0 +1,30 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-excelkits-blocks-calculator {
+	position: relative; // Contain error notifications
+	background-color: #fff;
+}
+
+.exk-block-insert-preview {
+	display: block;
+	max-width: 100%;
+	vertical-align: bottom;
+	aspect-ratio: 1060/625;
+	min-height: 150px;
+	box-sizing: border-box;
+}
+
+.exk-error-message-notification {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+	.components-snackbar__icon {
+		top: 10px;
+		left: 16px;
+	}
+}

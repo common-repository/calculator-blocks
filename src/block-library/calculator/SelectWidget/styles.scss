@@ -1,0 +1,71 @@
+.exk-select-widget-calc {
+	.components-placeholder__illustration {
+		z-index: 2;
+	}
+
+	.components-placeholder__fieldset {
+		opacity: 0;
+		height: 4.875rem; // 78px
+	}
+
+	.exk-select-widget-calc-spinner {
+		margin-left: 0;
+	}
+
+	.exk-select-widget-calc-control {
+		height: 2.25rem !important; // 36px
+		border-radius: 2px;
+	}
+
+	.exk-select-widget-calc-button {
+		margin-left: 0.75rem; // 12px
+	}
+
+	.exk-select-widget-calc-button--alternative {
+		margin-left: 1.5rem; // 24px
+	}
+
+	// Fix dashicon layout
+	.components-placeholder__label .dashicon {
+		margin-right: 0;
+
+		&::before {
+			display: block;
+			font-size: 1.4375rem; // 23px
+			transform: translateX(-4px);
+		}
+	}
+
+	.block-editor-block-icon,
+	.components-placeholder__label .dashicon {
+		width: 0.875rem; // 14px
+		height: 1.5rem; // 24px
+	}
+}
+
+.is-selected {
+	// Add border to placeholder on focus
+	.exk-select-widget-calc {
+		box-shadow: inset 0 0 0 1px #1e1e1e;
+	}
+
+	// Hide placeholder styles on focus
+	.exk-select-widget-calc::before,
+	.components-placeholder__illustration {
+		display: none;
+	}
+
+	.components-placeholder__fieldset {
+		opacity: 1;
+	}
+}
+
+// Empty state
+// .exk-select-widget-calc-empty {}
+
+.exk-select-widget-calc-link {
+	color: var(
+		--wp-components-color-accent,
+		var(--wp-admin-theme-color, #2271b1)
+	) !important;
+}
